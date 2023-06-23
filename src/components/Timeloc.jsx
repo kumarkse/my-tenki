@@ -1,0 +1,24 @@
+import React from 'react'
+import { formatToLocalTime } from '../weatherservice/Servivce'
+
+const Timeloc = ({weather : {dt,timezone,name,country}}) => {
+  return (
+    <div>
+    <div className='flex items-center justify-center my-6'>
+
+        <p className="font-extralight text-white text-xl ">
+            {formatToLocalTime(dt,timezone)}
+
+        </p>
+    </div>
+    <div className="flex items-center justify-center my-3">
+        <p className="text-white text-3xl font-medium" >
+            {`${name} ,${country}`}
+        </p>
+    </div>
+    
+    </div>
+  )
+}
+
+export default Timeloc
