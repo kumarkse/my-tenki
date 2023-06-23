@@ -22,17 +22,17 @@ const Detail = ({weather:{
 
                 <div className="font-light text-sm flex justify-center items-center">
                     <UilTemperature size={18} className='mr-1'/>
-                    feels like
+                    Feels like
                     <span className="font-medium ml-1">{`${feels_like}`} </span>
                 </div>
                 <div className="font-light text-sm flex justify-center items-center">
-                    <UilTemperature size={18} className='mr-1'/>
+                    <UilTear size={18} className='mr-1'/>
                     Humidity
                     <span className="font-medium ml-1">{`${humidity} %`} </span>
                 </div>
                 <div className="font-light text-sm flex justify-center items-center">
-                    <UilTemperature size={18} className='mr-1'/>
-                    wind
+                    <UilWind size={18} className='mr-1'/>
+                    Wind
                     <span className="font-medium ml-1">{`${speed} km/h`} </span>
                 </div>
             </div>
